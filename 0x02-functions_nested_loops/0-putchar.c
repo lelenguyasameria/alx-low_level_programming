@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * main - Entry point
  *
@@ -32,5 +34,6 @@ write(1, &c, 1);
 
 c = '\n';
 write(1, &c, 1);
+
 return (0);
 }
