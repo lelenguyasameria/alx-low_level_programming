@@ -1,9 +1,19 @@
-#include <unistd.h>
+#include <stdio.h> // add this header file
 
 /**
- * print_alphabet - Prints the English alphabet in lowercase
+ * _putchar - Writes a character to stdout.
  *
- * Return: void
+ * @c: The character to be written.
+ *
+ * Return: 1 on success or -1 on error.
+ */
+int _putchar(char c) // add the function prototype
+{
+return putchar(c);
+}
+
+/**
+ * print_alphabet - Prints the English alphabet in lowercase.
  */
 void print_alphabet(void)
 {
