@@ -9,7 +9,9 @@
  */
 int main(void)
 {
-char c = '_';
+char
+c = '_';
+write(1, &c, 1);
 
 c = 'p';
 write(1, &c, 1);
