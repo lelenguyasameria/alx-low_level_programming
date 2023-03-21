@@ -1,38 +1,25 @@
-#include <stdio.h> // add this header file
+#include <unistd.h>
 
 /**
- * _putchar - Writes a character to stdout.
- *
- * @c: The character to be written.
- *
- * Return: 1 on success or -1 on error.
- */
-int _putchar(char c) // add the function prototype
-{
-return putchar(c);
-}
-
-/**
- * print_alphabet - Prints the English alphabet in lowercase.
- */
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line
+ **/
 void print_alphabet(void)
 {
 char letter = 'a';
 
 while (letter <= 'z')
 {
-_putchar(letter);
+write(1, &letter, 1);
 letter++;
 }
 
-_putchar('\n');
+write(1, "\n", 1);
 }
 
 /**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
+ * main - calls the print_alphabet function
+ * Return: 0 if successful
+ **/
 int main(void)
 {
 print_alphabet();
