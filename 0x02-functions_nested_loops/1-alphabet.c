@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * print_alphabet - Prints the English alphabet in lowercase
