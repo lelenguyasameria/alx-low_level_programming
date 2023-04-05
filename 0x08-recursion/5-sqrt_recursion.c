@@ -1,7 +1,7 @@
 #include "main.h"
 #include "math.h"
 
-int sqrt_helper(int n, int start, int end);
+double sqrt_helper(double n, double start, double end);
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -11,13 +11,12 @@ int sqrt_helper(int n, int start, int end);
  * Return: the natural square root of n, or -1 if n does not have a natural
  * square root
  */
-int _sqrt_recursion(int n)
+double _sqrt_recursion(double n)
 {
 if (n < 0)
 return (-1);
 if (n == 0 || n == 1)
 return (n);
-
 return (sqrt_helper(n, 1, n));
 }
 
@@ -31,9 +30,9 @@ return (sqrt_helper(n, 1, n));
  * Return: the natural square root of n, or -1 if n does not have a natural
  * square root
  */
-int sqrt_helper(int n, int start, int end)
+double sqrt_helper(double n, double start, double end)
 {
-int mid = (start + end) / 2;
+double mid = (start + end) / 2;
 if (mid * mid == n)
 return (mid);
 if (start >= end)
