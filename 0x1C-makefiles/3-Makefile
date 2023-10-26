@@ -1,8 +1,8 @@
-NAME = notrebloh
+NAME = school
 
 CC = gcc
 
-SRC = main.c notrebloh.c
+SRC = main.c school.c
 
 OBJ = $(SRC:.c=.o)
 
