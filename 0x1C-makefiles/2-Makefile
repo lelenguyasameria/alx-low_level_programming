@@ -1,0 +1,11 @@
+NAME = notrebloh
+
+CC = gcc
+
+SRC = main.c notrebloh.c
+
+OBJ = $(SRC:.c=.o)
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+

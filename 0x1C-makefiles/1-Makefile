@@ -1,0 +1,5 @@
+CC = gcc
+SRC = main.c notrebloh.c
+all:
+	$(CC) $(SRC) -o notrebloh
+
