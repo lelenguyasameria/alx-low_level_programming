@@ -1,11 +1,21 @@
 #include "main.h"
+
 /**
- * print_alphabet - prints the alphabet in lowercase followed by a new line
+ * print_alphabet - use only user defined variables to create output
+ *
+ * Description: Write program to print "a to z" using _putchar
+ * Return: always success
  */
+
 void print_alphabet(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-_putchar(letter);
-_putchar('\n');
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
+
 }

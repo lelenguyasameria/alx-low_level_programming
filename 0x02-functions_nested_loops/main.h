@@ -1,32 +1,13 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-int function1(int arg1, double arg2);
-/*
- * Description: This function does something.
- * Parameters:
- *  - arg1: An integer argument.
- *  - arg2: A double argument.
- * Returns:
- *  - An integer result.
- */
-
-char function2(char arg);
-/*
- * Description: This function does something else.
- * Parameters:
- *  - arg: A character argument.
- * Returns:
- *  - A character result.
- */
-
 int _putchar(char c);
-/*
- * Description: This function prints a single character to the console.
- * Parameters:
- *  - c: The character to be printed.
- * Returns:
- *  - The number of characters printed (always 1).
- */
-
-#endif /* MAIN_H */
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
+void print_times_table(int n);
